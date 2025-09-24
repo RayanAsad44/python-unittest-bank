@@ -24,7 +24,7 @@ jobs:
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
 
       - name: Run tests
-        run: pytest
+        run: coverage run -m pytest
         
 	# your task: figure out the remainings steps 
 	# that match your selected language. 
